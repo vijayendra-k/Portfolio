@@ -186,6 +186,28 @@
 
   window.addEventListener("load", initSwiper);
 
+
+  // <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var dropdown = document.querySelector('.projects .toggle-dropdown');
+  var dropdownContent = document.querySelector('.projects .dropdown-content');
+
+  dropdown.addEventListener('click', function(event) {
+    event.preventDefault();
+    dropdownContent.classList.toggle('show');
+  });
+
+  // Optional: Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.projects a')) {
+      if (dropdownContent.classList.contains('show')) {
+        dropdownContent.classList.remove('show');
+      }
+    }
+  }
+});
+// </script>
+
   /**
    * Correct scrolling position upon page load for URLs containing hash links.
    */

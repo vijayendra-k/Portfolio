@@ -1267,9 +1267,11 @@ section,
   color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
+
+.coursework {
+  /* font-size: 32px;
+  font-weight: 700; */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
 }
